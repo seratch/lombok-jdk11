@@ -9,7 +9,8 @@ import lombok.*;
 //
 // The failure doesn't happen when you place the class under src/main/java
 
-@Builder(toBuilder = true)
+//@Builder(toBuilder = true)
+@Builder
 public class Sample {
     private Integer id;
     private String name;
