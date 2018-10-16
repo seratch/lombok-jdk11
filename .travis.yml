@@ -9,4 +9,8 @@ jdk:
   - openjdk9
   - openjdk10
   - openjdk11
-install: ./gradlew test
+env:
+  matrix:
+    - BUILD_TOOL="maven"
+    - BUILD_TOOL="gradle"
+script: ./travis.sh
