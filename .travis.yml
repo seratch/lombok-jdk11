@@ -3,7 +3,8 @@ language: java
 jdk:
   - oraclejdk8
   - oraclejdk9
-  - oraclejdk10
+  # oraclejdk10 is deprecated. See https://www.oracle.com/technetwork/java/javase/eol-135779.html for more details. Consider using openjdk10 instead.
+  #- oraclejdk10
   - oraclejdk11
   - openjdk8
   - openjdk9
