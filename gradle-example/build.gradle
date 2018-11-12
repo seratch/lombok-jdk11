@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'net.ltgt.apt' version '0.10'
 }
 
 compileJava {
@@ -16,7 +17,8 @@ sourceSets.test.compileClasspath += configurations.providedCompile
 sourceSets.test.runtimeClasspath += configurations.providedCompile
 
 dependencies {
-    providedCompile 'org.projectlombok:lombok:1.18.2'
+    apt 'org.projectlombok:lombok:1.18.4'
+    providedCompile 'org.projectlombok:lombok:1.18.4'
     testCompile 'junit:junit:4.12'
 }
 
